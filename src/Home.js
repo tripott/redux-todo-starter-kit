@@ -8,7 +8,7 @@ const Home = () => (
     <h1>Welcome Home</h1>
     <h2>AddToDo React Component Goes Here</h2>
     <h2>VisibleToDoList React Component Goes Here </h2>
-    <Footer />
+    <Footer foo="bar" />
   </div>
 )
 
