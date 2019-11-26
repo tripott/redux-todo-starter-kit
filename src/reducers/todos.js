@@ -1,14 +1,10 @@
-import { ADD_TODO, TOGGLE_TODO } from '../actions'
+import { ADD_TODO, TOGGLE_TODO, SET_TODOS } from '../actions'
 console.log(`1. todo reducer`)
 
-function todos(
-  state = [
-    { text: 'Feed the cat', completed: true },
-    { text: 'Make bed', completed: false }
-  ],
-  action
-) {
+function todos(state = [], action) {
   switch (action.type) {
+    case SET_TODOS:
+      return action.payload
     case ADD_TODO:
       return [...state, { text: action.payload, completed: false }]
     case TOGGLE_TODO:

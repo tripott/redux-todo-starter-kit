@@ -16,9 +16,9 @@ const getVisibleTodos = (todos, filter) => {
 }
 
 const mapStateToProps = state => {
-  console.log(`10. Visible ToDos. I got notified of a state change.`)
   return {
-    todos: getVisibleTodos(state.todos, state.visibilityFilter)
+    todos: getVisibleTodos(state.todos, state.visibilityFilter),
+    loadingState: state.todosLoadingState
   }
 }
 
