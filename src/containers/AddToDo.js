@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import { addTodo } from '../actions'
+import { addToDoListToAPI } from '../actions'
 
 const AddToDo = ({ dispatch }) => {
   const [inputTextValue, setInputTextValue] = useState('')
@@ -10,8 +10,8 @@ const AddToDo = ({ dispatch }) => {
       <form
         onSubmit={e => {
           e.preventDefault()
-
-          dispatch(addTodo(inputTextValue))
+          //console.log('form submit / adding to do')
+          dispatch(addToDoListToAPI(inputTextValue))
           setInputTextValue('')
         }}
       >

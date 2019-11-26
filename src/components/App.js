@@ -7,7 +7,7 @@ import AddToDo from '../containers/AddToDo'
 import Footer from './Footer'
 
 const App = () => {
-  console.log('4. App component is rendering.')
+  //console.log('4. App component is rendering.')
   return (
     <div>
       <h1>To Dos</h1>
