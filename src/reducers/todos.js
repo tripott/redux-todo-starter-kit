@@ -10,7 +10,7 @@ function todos(
 ) {
   switch (action.type) {
     case ADD_TODO:
-      return [...state, { text: action.payload.text, complete: false }]
+      return [...state, { text: action.payload, completed: false }]
     case TOGGLE_TODO:
       return state.map((todo, index) => {
         if (index === action.payload) {

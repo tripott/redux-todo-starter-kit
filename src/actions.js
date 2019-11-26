@@ -14,6 +14,7 @@ export const VisibilityFilters = {
 // THIS IS AN ACTION CREATOR
 //  IT CREATES ACTION OBJECTS... DUH
 export function addTodo(text) {
+  //console.log({ type: ADD_TODO, payload: text })
   return { type: ADD_TODO, payload: text }
 }
 

@@ -10,6 +10,7 @@ const AddToDo = ({ dispatch }) => {
       <form
         onSubmit={e => {
           e.preventDefault()
+
           dispatch(addTodo(inputTextValue))
           setInputTextValue('')
         }}
