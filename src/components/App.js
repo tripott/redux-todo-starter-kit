@@ -5,12 +5,15 @@ import React from 'react'
 import VisibleToDoList from '../containers/VisibleToDoList'
 import Footer from './Footer'
 
-const App = () => (
-  <div>
-    <h1>To Dos</h1>
-    <VisibleToDoList />
-    <Footer />
-  </div>
-)
+const App = () => {
+  console.log('4. App component is rendering.')
+  return (
+    <div>
+      <h1>To Dos</h1>
+      <VisibleToDoList />
+      <Footer />
+    </div>
+  )
+}
 
 export default App

@@ -1,4 +1,5 @@
 import { ADD_TODO, TOGGLE_TODO } from '../actions'
+console.log(`1. todo reducer`)
 
 function todos(
   state = [

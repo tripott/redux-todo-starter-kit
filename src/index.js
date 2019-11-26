@@ -6,6 +6,7 @@ import rootReducer from './reducers'
 import App from './components/App'
 
 const store = createStore(rootReducer)
+console.log(`3. index.js  store created. App rendering...`)
 
 render(
   <Provider store={store}>
